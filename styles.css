@@ -184,93 +184,176 @@ a {
   padding: 6rem 1.5rem;
 }
 
+.section-bordered {
+  border-top: 1px solid var(--border);
+}
+
 .section h2 {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 400;
   letter-spacing: -0.02em;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
-/* Cards */
-.cards {
+.split-heading {
+  margin-bottom: 2.5rem;
+}
+
+.split-heading h2 {
+  margin-top: 0.25rem;
+}
+
+/* Prose */
+.prose {
+  max-width: 40rem;
+}
+
+.prose p {
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.prose .lead {
+  font-size: 1.125rem;
+  color: var(--text);
+}
+
+/* Callout */
+.callout {
+  max-width: 40rem;
+  margin: 0;
+  padding: 2.5rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+}
+
+.callout-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.callout-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.25;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.callout-body {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.callout-body:last-child {
+  margin-bottom: 0;
+}
+
+/* Feature list */
+.feature-list {
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  gap: 1.25rem;
+  max-width: 40rem;
 }
 
-.card {
-  padding: 2rem;
+.feature-list li {
+  padding: 1.5rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 12px;
-  transition: border-color 0.2s;
 }
 
-.card:hover {
-  border-color: rgba(201, 169, 98, 0.35);
-}
-
-.card-num {
+.feature-list strong {
   display: block;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  margin-bottom: 1.25rem;
-}
-
-.card h3 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
 }
 
-.card p {
+.feature-list span {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.65;
 }
 
-/* About */
-.section-about {
-  border-top: 1px solid var(--border);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-.about-body p {
-  color: var(--text-muted);
-  margin-bottom: 1.25rem;
-}
-
-.about-body p:last-child {
-  margin-bottom: 0;
-}
-
 /* Contact */
-.section-contact {
-  border-top: 1px solid var(--border);
+.contact-inner {
+  max-width: 52rem;
 }
 
-.contact-inner {
-  max-width: 36rem;
+.contact-inner h2 {
+  margin-bottom: 1rem;
 }
 
 .contact-lead {
   color: var(--text-muted);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  max-width: 36rem;
 }
 
-.contact-note {
-  margin-top: 1.5rem;
-  font-size: 0.875rem;
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.option-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.option-num {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.option-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.option-card p {
+  font-size: 0.9rem;
   color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.option-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.contact-closing {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 /* Footer */
@@ -328,11 +411,6 @@ a {
     border-bottom: none;
     margin-top: 0.5rem;
     text-align: center;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 
   .footer {
