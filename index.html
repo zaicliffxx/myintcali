@@ -13,171 +13,153 @@
 <body>
   <!-- HEADER & NAVIGATION -->
   <header class="header">
-    <div class="container">
-      <a href="#" class="logo">MyInt Cali</a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#program" class="nav-link">Program</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a href="#" class="logo">MyInt</a>
+    <nav class="nav">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#program" class="nav-link">Program</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
   </header>
 
   <!-- HERO SECTION -->
   <main>
     <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>Calisthenics Coaching. Serious Results.</h1>
-          <p class="subheadline">
-            Build strength, mobility, and confidence with a disciplined, proven approach.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Start Now</a>
-            <a href="#about" class="btn btn-secondary">How It Works</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <!-- Coach image placeholder -->
-          <img src="coach.jpg" alt="Coach Myint" class="coach-photo" />
+      <div class="hero-content">
+        <h1>Build Strength<br />Your Way</h1>
+        <p class="hero-subtitle">
+          Personalized calisthenics coaching for serious, sustainable results.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
     </section>
 
-    <!-- SOCIAL PROOF -->
-    <section class="social-proof section section-bordered">
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
       <div class="container">
-        <h2>Proven. Trusted.</h2>
-        <div class="testimonials">
-          <article class="testimonial">
-            <!-- Placeholder for photo -->
-            <div class="testimonial-photo" aria-hidden="true"></div>
-            <blockquote>
-              <p>"Clear plans, steady progress. Myint keeps you focused."</p>
-              <footer>— Sarah L.</footer>
-            </blockquote>
-          </article>
-          <article class="testimonial">
-            <div class="testimonial-photo" aria-hidden="true"></div>
-            <blockquote>
-              <p>"Workouts are simple, but effective. My knees feel better than ever."</p>
-              <footer>— James K.</footer>
-            </blockquote>
-          </article>
-          <article class="testimonial">
-            <div class="testimonial-photo" aria-hidden="true"></div>
-            <blockquote>
-              <p>"No nonsense. Just results."</p>
-              <footer>— Emily W.</footer>
-            </blockquote>
-          </article>
+        <h2>Trusted by Athletes</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Clear plans, steady progress. Myint keeps you focused."</p>
+            <footer class="testimonial-author">Sarah L.</footer>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Workouts are simple, but effective. My knees feel better than ever."</p>
+            <footer class="testimonial-author">James K.</footer>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"No nonsense. Just results."</p>
+            <footer class="testimonial-author">Emily W.</footer>
+          </div>
         </div>
-        <!-- Future logos/certifications row can be placed here -->
-        <!-- <div class="trusted-logos"> ... </div> -->
       </div>
     </section>
 
     <!-- CORE BENEFITS -->
-    <section id="about" class="section section-bordered">
+    <section id="about" class="benefits-section">
       <div class="container">
-        <h2>Why Train with Myint?</h2>
+        <h2>Why Choose Myint?</h2>
         <div class="benefits-grid">
-          <div class="benefit">
-            <span class="benefit-icon" aria-hidden="true">🏋️</span>
+          <div class="benefit-card">
+            <div class="benefit-icon">📋</div>
             <h3>Personalized Plans</h3>
-            <ul>
-              <li>Personalized routines for your goals</li>
-            </ul>
+            <p>Custom routines tailored to your specific goals and fitness level.</p>
           </div>
-          <div class="benefit">
-            <span class="benefit-icon" aria-hidden="true">🏋️</span>
+          <div class="benefit-card">
+            <div class="benefit-icon">🏠</div>
             <h3>Train Anywhere</h3>
-            <ul>
-              <li>Train anywhere—no equipment needed</li>
-            </ul>
+            <p>No equipment needed. Progress from home, park, or anywhere.</p>
           </div>
-          <div class="benefit">
-            <span class="benefit-icon" aria-hidden="true">🏋️</span>
+          <div class="benefit-card">
+            <div class="benefit-icon">🛡️</div>
             <h3>Injury Prevention</h3>
-            <ul>
-              <li>Strengthens joints and prevents injury</li>
-            </ul>
+            <p>Smart progressions that strengthen joints and prevent injury.</p>
           </div>
-          <div class="benefit">
-            <span class="benefit-icon" aria-hidden="true">🏋️</span>
-            <h3>All Fitness Levels</h3>
-            <ul>
-              <li>Progress at any fitness level</li>
-            </ul>
+          <div class="benefit-card">
+            <div class="benefit-icon">🎯</div>
+            <h3>All Levels Welcome</h3>
+            <p>Beginner to advanced—programs scale with your progress.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROGRAM DETAILS -->
-    <section id="program" class="section section-bordered">
+    <!-- HOW IT WORKS -->
+    <section id="program" class="how-it-works">
       <div class="container">
         <h2>How It Works</h2>
-        <div class="program-steps">
-          <div class="step">
+        <div class="steps-grid">
+          <div class="step-card">
             <div class="step-number">1</div>
             <h3>Consultation</h3>
-            <p>Define goals and assess baseline.</p>
+            <p>Define your goals and assess your baseline.</p>
           </div>
-          <div class="step">
+          <div class="step-card">
             <div class="step-number">2</div>
             <h3>Assessment</h3>
-            <p>Check movement, mobility, and strength.</p>
+            <p>Check movement quality, mobility, and strength.</p>
           </div>
-          <div class="step">
+          <div class="step-card">
             <div class="step-number">3</div>
-            <h3>Plan</h3>
-            <p>Get a targeted, step-by-step program.</p>
+            <h3>Custom Plan</h3>
+            <p>Get your tailored, step-by-step program.</p>
           </div>
-          <div class="step">
+          <div class="step-card">
             <div class="step-number">4</div>
             <h3>Support</h3>
-            <p>Ongoing adjustments and feedback.</p>
+            <p>Ongoing adjustments and progress tracking.</p>
           </div>
         </div>
 
-        <section class="faq">
-          <h3>Frequently Asked Questions</h3>
-          <dl>
-            <dt>Do I need any equipment?</dt>
-            <dd>Most exercises use just your body; equipment is optional.</dd>
-
-            <dt>What if I have injuries or limitations?</dt>
-            <dd>Plans are adjusted to fit your specific needs safely.</dd>
-
-            <dt>How long until I see results?</dt>
-            <dd>Results typically start within 4 to 6 weeks with consistency.</dd>
-          </dl>
-        </section>
+        <div class="faq-section">
+          <h3>Quick Questions</h3>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h4>Do I need equipment?</h4>
+              <p>Most exercises use just your body; equipment is optional and helpful but not required.</p>
+            </div>
+            <div class="faq-item">
+              <h4>What if I have injuries?</h4>
+              <p>Plans are fully customized to your specific needs and limitations for safe training.</p>
+            </div>
+            <div class="faq-item">
+              <h4>How long until results?</h4>
+              <p>Results typically appear within 4–6 weeks with consistency and proper execution.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- FINAL CALL TO ACTION -->
-    <section id="contact" class="section section-bordered section-contact">
-      <div class="container contact-inner">
-        <h2>Ready to begin?</h2>
-        <p>Start your transformation today.</p>
-        <a href="#contact" class="btn btn-primary">Get Started</a>
-
-        <div class="contact-options">
-          <article class="option-card">
-            <h3>Email</h3>
-            <p>Send me a message anytime by email.</p>
-            <a href="mailto:tniym201@gmail.com" class="btn btn-ghost">tniym201@gmail.com</a>
-          </article>
-          <article class="option-card">
-            <h3>Telegram</h3>
-            <p>Reach out for a quick chat.</p>
-            <a href="https://t.me/zaicliffxx" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">@zaicliffxx</a>
-          </article>
+    <!-- CONTACT & CTA -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <h2>Ready to Start?</h2>
+          <p class="contact-subtitle">Transform your strength, discipline, and confidence today.</p>
+          <div class="contact-methods">
+            <a href="mailto:tniym201@gmail.com" class="contact-card">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <h3>Email</h3>
+                <p>tniym201@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://t.me/zaicliffxx" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <span class="contact-icon">💬</span>
+              <div>
+                <h3>Telegram</h3>
+                <p>@zaicliffxx</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -185,10 +167,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> MyInt Cali. All rights reserved.</p>
-      <a href="#">Back to top</a>
-    </div>
+    <p>&copy; <span id="year"></span> MyInt Cali. All rights reserved.</p>
   </footer>
 </body>
 </html>
