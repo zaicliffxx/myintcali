@@ -317,6 +317,80 @@ section h3 {
   font-size: 0.95rem;
 }
 
+/* ============ ABOUT ============ */
+.about-section {
+  padding: 5rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.about-content {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.about-text {
+  background: var(--bg-elevated);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.about-text p {
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.about-text h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text h3:first-child {
+  margin-top: 0;
+}
+
+.about-list {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.about-list li {
+  padding: 1rem 0 1rem 1.5rem;
+  position: relative;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.about-list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* ============ BENEFITS ============ */
 .benefits-grid {
   display: grid;
@@ -575,6 +649,7 @@ section h3 {
   .testimonials-section,
   .benefits-section,
   .how-it-works,
+  .about-section,
   .contact-section {
     padding: 3rem 1.5rem;
   }
@@ -610,6 +685,10 @@ section h3 {
   }
 
   .faq-section {
+    padding: 2rem;
+  }
+
+  .about-text {
     padding: 2rem;
   }
 }
