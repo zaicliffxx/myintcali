@@ -277,31 +277,44 @@ section h3 {
 
 .services-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
   max-width: 72rem;
   margin: 0 auto 3rem;
 }
 
-.services-column h3 {
+.service-offering {
+  background: var(--bg-elevated);
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.service-offering:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.service-offering h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--text);
 }
 
-.benefit-card h4,
-.step-card h4 {
+.service-offering p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
   font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
-.benefit-card p,
-.step-card p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.5;
+.service-offering strong {
+  color: var(--accent);
+  font-weight: 600;
 }
 .testimonials-grid {
   display: grid;
@@ -449,17 +462,6 @@ section h3 {
   padding: 5rem 1.5rem;
   border-top: 1px solid var(--border);
   background: var(--bg);
-}
-
-.skills-intro {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  margin-bottom: 3rem;
-  max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  line-height: 1.7;
 }
 
 .videos-grid {
