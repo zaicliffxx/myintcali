@@ -1,13 +1,13 @@
 :root {
-  --bg: #0c0c0b;
-  --bg-elevated: #141413;
-  --text: #f4f3f0;
-  --text-muted: #9a9890;
-  --accent: #c9a962;
-  --accent-dim: rgba(201, 169, 98, 0.15);
-  --border: rgba(244, 243, 240, 0.08);
-  --font-sans: "DM Sans", system-ui, sans-serif;
-  --font-serif: "Instrument Serif", Georgia, serif;
+  --bg: #FAFAF8;
+  --bg-elevated: #F0F0F0;
+  --text: #1C2833;
+  --text-muted: #5A6B7A;
+  --accent: #7A9B8E;
+  --accent-dim: rgba(122, 155, 142, 0.12);
+  --border: rgba(122, 155, 142, 0.2);
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
   --max-width: 68rem;
   --header-h: 4.5rem;
 }
@@ -50,7 +50,7 @@ a {
   justify-content: space-between;
   height: var(--header-h);
   padding: 0 1.5rem;
-  background: rgba(12, 12, 11, 0.85);
+  background: rgba(250, 250, 248, 0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -165,7 +165,7 @@ a {
 }
 
 .btn-primary:hover {
-  background: #d4b872;
+  background: #6A8B7E;
 }
 
 .btn-ghost {
