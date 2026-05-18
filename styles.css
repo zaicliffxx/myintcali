@@ -335,8 +335,27 @@ section h3 {
 }
 
 .about-content {
-  max-width: 52rem;
+  max-width: 72rem;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.about-photo {
+  position: sticky;
+  top: calc(var(--header-h) + 2rem);
+}
+
+.coach-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  display: block;
+  object-fit: cover;
 }
 
 .about-text {
@@ -389,6 +408,56 @@ section h3 {
 .about-list strong {
   color: var(--text);
   font-weight: 600;
+}
+
+/* ============ SKILLS IN ACTION ============ */
+.skills-section {
+  padding: 5rem 1.5rem;
+  border-top: 1px solid var(--border);
+  background: var(--accent-dim);
+}
+
+.skills-intro {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.video-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.video-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.skill-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 /* ============ BENEFITS ============ */
@@ -650,12 +719,26 @@ section h3 {
   .benefits-section,
   .how-it-works,
   .about-section,
+  .skills-section,
   .contact-section {
     padding: 3rem 1.5rem;
   }
 
   section h2 {
     margin-bottom: 2rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-photo {
+    position: static;
+  }
+
+  .about-text {
+    padding: 2rem;
   }
 
   .hero {
@@ -673,7 +756,8 @@ section h3 {
   .testimonials-grid,
   .benefits-grid,
   .steps-grid,
-  .contact-methods {
+  .contact-methods,
+  .videos-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
