@@ -1,172 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Myint — freelance calisthenics coach. Build strength, mobility, and a sustainable body using bodyweight training.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Myint — freelance calisthenics coach. Build strength, mobility, and a sustainable body using bodyweight training."/>
   <title>MyInt Cali — Calisthenics Coaching with Myint</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- HEADER & NAVIGATION -->
   <header class="header">
-    <a href="#" class="logo">MyInt Cali</a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#philosophy">Philosophy</a>
-      <a href="#for-you">Who it's for</a>
-      <a href="#contact" class="nav-cta">Get started</a>
-    </nav>
+    <div class="container">
+      <a href="#" class="logo">MyInt Cali</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#program" class="nav-link">Program</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- HERO SECTION -->
   <main>
     <section class="hero">
-      <p class="eyebrow">Meet your coach</p>
-      <h1>Myint</h1>
-      <p class="hero-lead">
-        Helping you build a strong, mobile, and resilient body using the ultimate training tool—yourself.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get started</a>
-        <a href="#about" class="btn btn-ghost">Learn more</a>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Transform Your Body with Expert Calisthenics Coaching</h1>
+          <p class="subheadline">
+            Personalized, effective bodyweight training for strength, mobility, and confidence.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Coach image placeholder -->
+          <img src="coach.jpg" alt="Coach Myint" class="coach-photo" />
+        </div>
       </div>
     </section>
 
+    <!-- SOCIAL PROOF -->
+    <section class="social-proof section section-bordered">
+      <div class="container">
+        <h2>Trusted by real people</h2>
+        <div class="testimonials">
+          <article class="testimonial">
+            <!-- Placeholder for photo -->
+            <div class="testimonial-photo" aria-hidden="true"></div>
+            <blockquote>
+              <p>"Myint’s coaching transformed how I approach training. The results speak for themselves."</p>
+              <footer>— Sarah L.</footer>
+            </blockquote>
+          </article>
+          <article class="testimonial">
+            <div class="testimonial-photo" aria-hidden="true"></div>
+            <blockquote>
+              <p>"Clear guidance and personalized plans helped me overcome injuries and gain strength."</p>
+              <footer>— James K.</footer>
+            </blockquote>
+          </article>
+          <article class="testimonial">
+            <div class="testimonial-photo" aria-hidden="true"></div>
+            <blockquote>
+              <p>"I never thought bodyweight training could be this effective. Highly recommend Myint’s coaching."</p>
+              <footer>— Emily W.</footer>
+            </blockquote>
+          </article>
+        </div>
+        <!-- Future logos/certifications row can be placed here -->
+        <!-- <div class="trusted-logos"> ... </div> -->
+      </div>
+    </section>
+
+    <!-- CORE BENEFITS -->
     <section id="about" class="section section-bordered">
-      <div class="split-heading">
-        <p class="eyebrow">About</p>
-        <h2>Hi everyone</h2>
-      </div>
-      <div class="prose">
-        <p>
-          My name is Myint. I'm a freelance personal trainer specializing in calisthenics—the beautiful art of bodyweight exercise.
-        </p>
-        <p>
-          For over 10 years, I've practiced calisthenics and longevity protocols. Today, I coach others to build functional strength, improve physical fitness, and cultivate a sustainable, healthy lifestyle.
-        </p>
-      </div>
-    </section>
-
-    <section id="philosophy" class="section section-bordered">
-      <div class="split-heading">
-        <p class="eyebrow">Philosophy</p>
-        <h2>Movement for longevity</h2>
-      </div>
-      <div class="prose">
-        <p class="lead">
-          My ultimate goal for you is simple: a healthy body and a calm mind for as long as possible.
-        </p>
-        <p>
-          I believe that any movement is better than no movement. I chose calisthenics because it is efficient, deeply rewarding, and best of all—the world is your gym.
-        </p>
-        <p>
-          Unlike machine-based gym workouts, calisthenics can have a slight learning curve at the beginning. But with the right guidance at the start, the results are worth ten times the effort. Before you know it, moving this way will become an effortless, joyful part of your daily life.
-        </p>
+      <div class="container">
+        <h2>Why Choose Calisthenics Coaching?</h2>
+        <div class="benefits-grid">
+          <div class="benefit">
+            <span class="benefit-icon" aria-hidden="true">🏋️</span>
+            <h3>Personalized Plans</h3>
+            <p>Training programs tailored to your goals, needs, and lifestyle for maximum results.</p>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon" aria-hidden="true">🏋️</span>
+            <h3>Train Anywhere</h3>
+            <p>No gym needed. Use your own body and environment to build strength anytime, anywhere.</p>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon" aria-hidden="true">🏋️</span>
+            <h3>Injury Prevention</h3>
+            <p>Focus on joint health and mobility to stay strong and injury-free over the long term.</p>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon" aria-hidden="true">🏋️</span>
+            <h3>All Fitness Levels</h3>
+            <p>Whether beginner or advanced, the coaching adapts to where you are and helps you progress.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section section-bordered">
-      <blockquote class="callout">
-        <p class="callout-label">The myth</p>
-        <p class="callout-quote">"You need heavy weights to build muscle"</p>
-        <p class="callout-body">
-          Many people believe that building a strong, muscular physique requires lifting heavy weights. But that's simply not true.
-        </p>
-        <p class="callout-body">
-          Your own body is an incredibly powerful training tool. With a structured approach, bodyweight training can effectively build strength, lean muscle, and deep joint mobility all at once.
-        </p>
-      </blockquote>
+    <!-- PROGRAM DETAILS -->
+    <section id="program" class="section section-bordered">
+      <div class="container">
+        <h2>How the Program Works</h2>
+        <div class="program-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Free Consultation</h3>
+            <p>We start with a no-obligation chat to understand your goals and needs.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Custom Assessment</h3>
+            <p>Detailed evaluation of your current fitness, mobility, and movement patterns.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Personalized Plan</h3>
+            <p>A step-by-step bodyweight training program tailored just for you.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Ongoing Support</h3>
+            <p>Continuous guidance, adjustments, and motivation to keep you on track.</p>
+          </div>
+        </div>
+
+        <section class="faq">
+          <h3>Frequently Asked Questions</h3>
+          <dl>
+            <dt>Do I need any equipment?</dt>
+            <dd>The program primarily uses bodyweight exercises, requiring minimal or no equipment.</dd>
+
+            <dt>What if I have injuries or limitations?</dt>
+            <dd>Plans are customized to accommodate your limitations and promote safe progression.</dd>
+
+            <dt>How long until I see results?</dt>
+            <dd>Consistency is key; many clients begin to notice improvements within 4-6 weeks.</dd>
+          </dl>
+        </section>
+      </div>
     </section>
 
-    <section id="journey" class="section section-bordered">
-      <div class="split-heading">
-        <p class="eyebrow">My journey</p>
-        <h2>Why I coach</h2>
-      </div>
-      <div class="prose">
-        <p>
-          When I first started, my biggest obstacle was a lack of direction. I wasted a lot of time following random online workouts without any real structure, which slowed my progress and led to unnecessary frustration.
-        </p>
-        <p>
-          I want to help you skip that frustrating trial-and-error phase.
-        </p>
-        <p>
-          By giving you a clear, personalized plan, we will work together to reach your fitness goals efficiently, safely, and with confidence. My focus isn't just on quick, short-term fixes. It is about long-term consistency—helping you build habits that last, avoid injuries, and actually enjoy the process of becoming a healthier individual.
-        </p>
-      </div>
-    </section>
-
-    <section id="for-you" class="section section-bordered">
-      <div class="split-heading">
-        <p class="eyebrow">Who this is for</p>
-        <h2>Built for you if&hellip;</h2>
-      </div>
-      <ul class="feature-list">
-        <li>
-          <strong>Freedom in your training</strong>
-          <span>You want to build a strong, capable body anywhere—without being locked into an expensive gym membership.</span>
-        </li>
-        <li>
-          <strong>Tired of joint pain</strong>
-          <span>You want functional strength that protects and heals your body, focusing on longevity rather than just lifting heavy.</span>
-        </li>
-        <li>
-          <strong>A clear roadmap</strong>
-          <span>You are done wasting time guessing what to do and want a step-by-step, personalized structure.</span>
-        </li>
-        <li>
-          <strong>Any fitness level</strong>
-          <span>Whether you cannot do a single push-up yet, or you are looking to master advanced bodyweight movements, we start exactly where you are.</span>
-        </li>
-      </ul>
-    </section>
-
+    <!-- FINAL CALL TO ACTION -->
     <section id="contact" class="section section-bordered section-contact">
-      <div class="contact-inner">
-        <p class="eyebrow">Get started</p>
-        <h2>Ready to build something lasting?</h2>
-        <p class="contact-lead">
-          If you are ready to stop guessing and start making real, sustainable progress, let's take the first step together.
-        </p>
+      <div class="container contact-inner">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Take the first step toward a stronger, healthier you. Let’s build a lasting foundation together.</p>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
 
         <div class="contact-options">
           <article class="option-card">
-            <span class="option-num">01</span>
-            <h3>Coaching form</h3>
-            <p>Share your goals and background so I can understand where you're starting from.</p>
-            <!-- Replace # with your Google Form or Typeform URL -->
-            <a href="#" class="btn btn-primary">Fill out my coaching form</a>
-          </article>
-          <article class="option-card">
-            <span class="option-num">02</span>
-            <h3>Telegram</h3>
-            <p>Message me for a quick, casual chat.</p>
-            <a href="https://t.me/zaicliffxx" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">@zaicliffxx</a>
-          </article>
-          <article class="option-card">
-            <span class="option-num">03</span>
             <h3>Email</h3>
             <p>Prefer email? Send me a message anytime.</p>
             <a href="mailto:tniym201@gmail.com" class="btn btn-ghost">tniym201@gmail.com</a>
           </article>
+          <article class="option-card">
+            <h3>Telegram</h3>
+            <p>Message me for a quick, casual chat.</p>
+            <a href="https://t.me/zaicliffxx" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">@zaicliffxx</a>
+          </article>
         </div>
-
-        <p class="contact-closing">Let's build something lasting together.</p>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; <span id="year"></span> MyInt Cali. All rights reserved.</p>
-    <a href="#">Back to top</a>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> MyInt Cali. All rights reserved.</p>
+      <a href="#">Back to top</a>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
